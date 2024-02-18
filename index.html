@@ -1,39 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPW5</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sentences Poping Web</title>
-  <link rel="stylesheet" href="./CSS/style.css">
-</head>
+  <body>
+    <button id="backButton">Back</button>
 
-<body>
-  <button style="margin: 4px;" id="invertColorsButton1"></button>
-  <button style="margin-top: 4px;" id="invertColorsButton2"></button>
+    <div id="colorInvertContainer">
+      <button id="invertColorsButton1"></button>
+      <button id="invertColorsButton2"></button>
+    </div>
 
-  <div id="linksContainer">
-    <a href="./SPW1/index.html" class="randomLink">What should we think of Freedom/ Liberty?</a>
-    <a href="./SPW2/index.html" class="randomLink">Everyone is an artist?</a>
-    <a href="./SPW3/index.html" class="randomLink">How to view capitalism?</a>
-    <a href="./SPW4/index.html" class="randomLink">What is the nature of consciousness?</a>
-    <a href="./SPW5/index.html" class="randomLink">Should we put clothes on our dogs?</a>
-    <a href="./SPW6/index.html" class="randomLink">Should plants have animal rights?</a>
-    <a href="./SPW7/index.html" class="randomLink">Who's responsible when AI goes wrong?</a>
-    <a href="./SPW8/index.html" class="randomLink">Should pineapple be on pizza?</a>
-    <a href="./SPW9/index.html" class="randomLink">Right or wrong to wear socks to bed?</a>
-    <a href="./SPW10/index.html" class="randomLink">Should ketchup be stored in the fridge?</a>
-    <a href="./SPW1/index.html" class="randomLink">What should we think of Freedom/ Liberty?</a>
-    <a href="./SPW2/index.html" class="randomLink">Everyone is an artist?</a>
-    <a href="./SPW3/index.html" class="randomLink">How to view capitalism?</a>
-    <a href="./SPW4/index.html" class="randomLink">What is the nature of consciousness?</a>
-    <a href="./SPW5/index.html" class="randomLink">Should we put clothes on our dogs?</a>
-    <a href="./SPW6/index.html" class="randomLink">Should plants have animal rights?</a>
-    <a href="./SPW7/index.html" class="randomLink">Who's responsible when AI goes wrong?</a>
-    <a href="./SPW8/index.html" class="randomLink">Should pineapple be on pizza?</a>
-    <a href="./SPW9/index.html" class="randomLink">Right or wrong to wear socks to bed?</a>
-    <a href="./SPW10/index.html" class="randomLink">Should ketchup be stored in the fridge?</a>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <div id="backgroundMessage">Should we put clothes on our dogs?</div>
+    <div id="wordContainer"></div>
+    <div id="inputContainer">
+      <p>Disagree with it?</p>
+      <input type="text" id="wordInput" placeholder="Write your own sentence">
+      <button id="submitWord">Submit</button>
+    </div>
+    <script src="words.js"></script>
+    <script src="../JS/script.js"></script>
+  </body>
+  
 </html>
