@@ -1,0 +1,150 @@
+body, html {
+  background-color: white;
+  color: black;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+#wordContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.word {
+  position: absolute;
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+#inputContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+#wordInput {
+  padding: 5px;
+  width: 200px;
+}
+
+#submitWord {
+  background-color: white; 
+  border: 2px solid black; /* Simple border */
+  border-radius: 4px; /* Square edges for a more modern look */
+  padding: 6px 10px; /* Adequate padding */
+  font-family: 'Arial', sans-serif; /* Matching font */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+#submitWord:hover {
+  background-color: black;
+  color: white; /* changes to white on hover */
+}
+
+
+
+#colorInvertContainer {
+  position: absolute;
+  bottom: 72px;
+  left: 19px;
+  z-index: 2;
+}
+
+
+
+#backgroundMessage {
+  position: fixed; /* 使用fixed定位，确保始终在视口中间 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 确保准确居中 */
+  z-index: -1;
+  font-size: 36px; /* 字体大小，可根据需要调整 */
+  color: #00000070; /* 字体颜色，根据背景色调整以确保可见性 */
+}
+
+
+/* For Start Page */
+.randomLink {
+  position: absolute;
+  font-size: 36px; /* 根据需要调整 */
+  color: black;
+}
+
+/* Invert-Color Button */
+#invertColorsButton1 {
+  background-color: black; 
+  border: none; 
+  border-radius: 50%; /* Make the button a circle */
+  width: 20px;
+  height: 20px; 
+  margin: 0px;
+  cursor: pointer;
+}
+
+.inverted {
+  background-color: black;
+  color: white;
+  /* Invert link colors */
+  --link-color: white; /* custom property for link color */
+}
+
+.inverted a {
+  color: var(--link-color); /* custom property for link color */
+}
+
+#invertColorsButton1.invertedButton1 {
+  background-color: white; /* Inverted button background color */
+  /* Ensure the button is visible against a potentially inverted background */
+}
+
+
+#invertColorsButton2 {
+  background-color: #2344e9; 
+  border: none; 
+  border-radius: 50%; /* Make the button a circle */
+  width: 20px;
+  height: 20px; 
+  cursor: pointer;
+}
+
+.inverted2 {
+  background-color: black;
+  color: #2344e9;
+  /* Invert link colors */
+  --link-color: #2344e9; /* custom property for link color */
+}
+
+.inverted2 a {
+  color: var(--link-color); /* custom property for link color */
+}
+
+#invertColorsButton2.invertedButton2 {
+  background-color: white; /* Inverted button background color */
+}
+
+/* Back Button */
+#backButton {
+  background-color: white; 
+  border: 2px solid black; /* Simple border */
+  border-radius: 4px; 
+  padding: 4px 8px;
+  margin: 10px;
+  font-family: 'Arial', sans-serif; /* Matching font */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 2;
+}
+#backButton:hover {
+  background-color: black;
+  color: white;
+}
