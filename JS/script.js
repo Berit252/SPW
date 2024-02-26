@@ -50,7 +50,7 @@ function addWord() {
   wordContainer.appendChild(word);
   currentWords++;
 
-  setTimeout(addWord, 500);
+  setTimeout(addWord, 1000);
 }
 
 function removeWord() {
